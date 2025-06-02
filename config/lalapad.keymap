@@ -180,6 +180,16 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        COMBO_Slash {
+            bindings = <&kp SLASH>;
+            key-positions = <7 8>;
+            layers = <1>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -236,7 +246,7 @@
         MOUSE_R_LAYER {
             display-name = "mouse_r_layer";
             bindings = <
-&trans  &trans  &trans     &trans     &trans     &trans  &trans  &trans  &kp LS(LC(TAB))  &kp LC(TAB)  &mkp MB5   &mkp MB5
+&trans  &trans  &trans     &trans     &trans     &trans  &trans  &trans  &kp LS(LC(TAB))  &kp LC(TAB)  &mkp MB4   &mkp MB5
 &trans  &trans  &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans  &trans  &trans  &mkp LCLK        &mkp MCLK    &mkp RCLK  &mo SCROLL_R_LAYER
 &trans  &trans  &trans     &trans     &trans     &trans  &trans  &trans  &trans           &trans       &trans     &trans
 &trans  &trans  &trans     &trans     &trans     &trans  &trans  &trans  &trans           &trans       &trans     &trans
