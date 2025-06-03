@@ -184,7 +184,7 @@
         compatible = "zmk,combos";
 
         COMBO_Slash {
-            bindings = <&kp FSLH>;
+            bindings = <&kp KP_SLASH>;
             key-positions = <7 8>;
             layers = <1>;
         };
@@ -228,7 +228,7 @@
             sensor-bindings = <&scroll_down_up>, <&scroll_up_down>;
 
             bindings = <
-&kp ESC    &kp Q         &kp W         &kp E            &kp R        &kp T                     &kp Y                   &kp U           &kp I            &kp O                 &kp P          &mt EQUAL MINUS
+&kp ESC    &kp Q         &kp W         &kp E            &kp R        &kp T                     &kp Y                   &kp U           &kp I            &kp O                 &kp P          &kp FSLH
 &kp TAB    &kp A         &kp S         &kp D            &kp F        &kp G                     &kp H                   &kp J           &kp K            &kp L                 &kp BACKSPACE  &kp MINUS
 &kp LSHFT  &kp Z         &kp X         &kp C            &kp V        &kp B                     &kp N                   &kp M           &mt RCTRL COMMA  &mt RIGHT_ALT PERIOD  &kp UP         &kp RCTRL
 &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 SPACE      &lt 5 TAB    &lt TERTIARY_LAYER LANG2  &lt SYSTEM_LAYER LANG1  &kp LEFT_SHIFT  &lt 2 ENTER      &kp LEFT              &kp DOWN       &kp RIGHT
