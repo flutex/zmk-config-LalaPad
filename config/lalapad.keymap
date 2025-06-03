@@ -184,7 +184,7 @@
         compatible = "zmk,combos";
 
         COMBO_Slash {
-            bindings = <&kp SLASH>;
+            bindings = <&kp FSLH>;
             key-positions = <7 8>;
             layers = <1>;
         };
