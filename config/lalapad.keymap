@@ -244,6 +244,24 @@
             key-positions = <17 16>;
             layers = <0>;
         };
+
+        f10 {
+            bindings = <&kp F10>;
+            key-positions = <31 19>;
+            layers = <5>;
+        };
+
+        f11 {
+            bindings = <&kp F11>;
+            key-positions = <32 20>;
+            layers = <5>;
+        };
+
+        f12 {
+            bindings = <&kp F12>;
+            key-positions = <33 21>;
+            layers = <5>;
+        };
     };
 
     keymap {
@@ -254,10 +272,10 @@
             sensor-bindings = <&scroll_down_up>, <&scroll_up_down>;
 
             bindings = <
-&kp ESC    &kp Q         &kp W         &kp E            &kp R        &kp T                     &kp Y                   &kp U        &kp I            &kp O              &kp P          &kp FSLH
-&kp TAB    &kp A         &kp S         &kp D            &kp F        &kp G                     &kp H                   &kp J        &kp K            &TD_minus_l_nami   &kp BACKSPACE  &kp MINUS
-&kp LSHFT  &kp Z         &kp X         &kp C            &kp V        &kp B                     &kp N                   &kp M        &mt RCTRL COMMA  &mt RIGHT_ALT DOT  &kp UP         &kp RCTRL
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 SPACE      &lt 5 TAB    &lt TERTIARY_LAYER LANG2  &lt SYSTEM_LAYER LANG1  &kp LSHIFT   &lt 2 ENTER      &kp LEFT           &kp DOWN       &kp RIGHT
+&kp ESC    &kp Q         &kp W         &kp E            &kp R        &kp T                     &kp Y                   &kp U        &kp I            &kp O              &kp P          &none
+&kp TAB    &kp A         &kp S         &kp D            &kp F        &kp G                     &kp H                   &kp J        &kp K            &TD_minus_l_nami   &kp BACKSPACE  &none
+&kp LSHFT  &kp Z         &kp X         &kp C            &kp V        &kp B                     &kp N                   &kp M        &mt RCTRL COMMA  &mt RIGHT_ALT DOT  &kp UP         &kp RIGHT_ARROW
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 SPACE      &lt 5 TAB    &lt TERTIARY_LAYER LANG2  &lt SYSTEM_LAYER LANG1  &kp LSHIFT   &lt 2 ENTER      &kp LEFT           &kp DOWN       &kp MINUS
                          &allow_end    &allow_pagedown  &allow_home  &allow_pageup             &allow_pageup           &allow_home  &allow_pagedown  &allow_end
             >;
         };
@@ -270,7 +288,7 @@
 &trans  &kp COLON      &kp LS(NUMBER_7)  &kp LS(N8)        &kp LS(NUMBER_9)  &kp LS(N0)     &kp BACKSLASH      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp LS(SINGLE_QUOTE)  &trans
 &trans  &kp SEMICOLON  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &kp DQT        &kp LEFT_BRACKET   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp BACKSPACE         &kp TILDE
 &trans  &trans         &kp LS(N1)        &kp LS(N2)        &kp LS(N3)        &kp LS(SLASH)  &kp RIGHT_BRACKET  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans                &trans
-&trans  &trans         &trans            &trans            &trans            &kp CAPS       &trans             &kp DELETE       &kp KP_NUMBER_0  &trans           &trans                &trans
+&trans  &trans         &trans            &trans            &trans            &kp CAPS       &trans             &kp DELETE       &kp KP_NUMBER_0  &trans           &trans                &kp TILDE
                        &trans            &trans            &trans            &trans         &trans             &trans           &trans           &trans
             >;
         };
@@ -284,6 +302,8 @@
 &trans  &trans     &trans     &trans     &trans     &trans     &trans           &trans          &trans        &trans     &trans    &trans
                    &trans     &trans     &trans     &trans     &trans           &trans          &trans        &trans
             >;
+
+            sensor-bindings = <&volume_up_down>;
         };
 
         SYSTEM_LAYER {
